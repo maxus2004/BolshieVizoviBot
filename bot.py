@@ -52,14 +52,19 @@ def user_input_loop():
         if(str == '/printchats'):
             print(chats)
 
-threading1 = threading.Thread(target=user_input_loop)
-threading1.daemon = True
-threading1.start()
+def main():
 
-threading2 = threading.Thread(target=check_loop)
-threading2.daemon = True
-threading2.start()
+    threading1 = threading.Thread(target=user_input_loop)
+    threading1.daemon = True
+    threading1.start()
 
-print('bot started')
+    threading2 = threading.Thread(target=check_loop)
+    threading2.daemon = True
+    threading2.start()
 
-bot.polling(none_stop=True, interval=0)
+    print('bot started')
+
+    bot.polling(none_stop=True, interval=0)
+   
+
+main()
