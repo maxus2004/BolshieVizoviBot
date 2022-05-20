@@ -39,6 +39,7 @@ def check_loop():
             send_message_to_all('РЕЗУЛЬТАТЫЫЫЫ!!!!!! https://konkurs.sochisirius.ru/news')
             send_message_to_all('РЕЗУЛЬТАТЫЫЫЫ!!!!!! https://konkurs.sochisirius.ru/news')
             send_message_to_all('РЕЗУЛЬТАТЫЫЫЫ!!!!!! https://konkurs.sochisirius.ru/news')
+            break
         else:
             print("пока резов нет")
         time.sleep(10)
